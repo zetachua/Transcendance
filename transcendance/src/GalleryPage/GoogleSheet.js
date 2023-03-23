@@ -1,7 +1,5 @@
-
 import React, { useState ,useEffect} from "react";
-
-let SHEET_ID = '1AESw7GvFC53W6NUSgiSNw9RhgjyeOn2a5TW7hyTeac8'
+let SHEET_ID = '1JNDtRuNrOzqmvq1sM2yyc19vGOSZraIUwzz35nMzfP4'
 let SHEET_TITLE = 'Transcendance';
 let SHEET_RANGE = 'D2:D10'
 
@@ -26,9 +24,8 @@ return (
     <div>
       {(rows)?rows.map(item=>
       {return(
-       <div>
-        <img src={"https://drive.google.com/uc?export=view&id="+item.c[0].v} alt="drive image"></img>
-       </div>)}
+        <HomePageImage src={"https://drive.google.com/uc?export=view&id="+item.c[0].v} alt="drive image"></HomePageImage>
+       )}
       ):null}
     </div>
   );
