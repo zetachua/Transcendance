@@ -1,6 +1,6 @@
 
 import React, { useState ,useEffect} from "react";
-import HomePage, { HomePageImage,BorderBL,BorderBR,BorderTL,BorderTR} from "./HomePage.style";
+import HomePage, { HomePageImage,Border,Container} from "./HomePage.style";
 let SHEET_ID = '1AESw7GvFC53W6NUSgiSNw9RhgjyeOn2a5TW7hyTeac8'
 let SHEET_TITLE = 'Transcendance';
 let SHEET_RANGE = 'D2:D10'
@@ -23,23 +23,29 @@ const HomeGallery = () => {
 
 return (
     <HomePage>
-      <BorderTL></BorderTL>
-      <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[0].c[0].v} alt="drive image"></HomePageImage>
-      <BorderTR></BorderTR>
-      <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[1].c[0].v} alt="drive image"></HomePageImage>
-      <BorderBL></BorderBL>
-      <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[2].c[0].v} alt="drive image"></HomePageImage>
-      <BorderBR></BorderBR>
-      <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[3].c[0].v} alt="drive image"></HomePageImage>
-      {/* {(rows)?rows.map(item=>
-      {return(
-          <div>
-            <Border></Border>
-            <HomePageImage src={"https://drive.google.com/uc?export=view&id="+item.c[0].v} alt="drive image"></HomePageImage>
-          </div>
-       )}
-      ):null} */}
-    </HomePage>
+      <Container>
+        <Border></Border>
+        <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[0].c[0].v} alt="drive image"></HomePageImage>
+      </Container>
+      <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h2>CREATIONS</h2></a>
+      <Container>
+        <Border></Border>
+        <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[1].c[0].v} alt="drive image"></HomePageImage>
+      </Container>
+      <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h2>GALLERY</h2></a>
+      <HomePageImage style={{width:'92%', margin:'auto'}}src={"https://drive.google.com/uc?export=view&id="+rows[4].c[0].v} alt="drive image"></HomePageImage>
+      <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h2>BIOGRAPHY</h2></a>
+      <Container>
+        <Border></Border>
+        <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[3].c[0].v} alt="drive image"></HomePageImage>
+      </Container>
+     <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h2>Transcendance</h2></a>
+      <Container>
+        <Border></Border>
+        <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[2].c[0].v} alt="drive image"></HomePageImage>
+      </Container>
+  </HomePage>
+
   );
 }
 

@@ -1,11 +1,11 @@
 import './App.css';
 import GoogleSheet2 from './HomePage/GoogleSheet2';
-import HomePage from './HomePage/HomePage';
+import HomePageText from './HomePage/HomePage';
 
 function App() {
 
   return (
-    <div>
+    <div className='App'>
       <GoogleSheet2></GoogleSheet2>
     </div>
   );
