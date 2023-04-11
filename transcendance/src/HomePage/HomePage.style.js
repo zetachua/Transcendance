@@ -7,7 +7,7 @@ const HomePage = styled.div`
     grid-template-rows: auto;
     grid-template-columns:repeat(3, minmax(0, 1fr));
     background-color:#E6E6E6;
-    padding:5px 20px 0px 20px;
+    padding:20px 20px 0px 20px;
     gap:2rem;
     text-align:center;
     justify-content:center;
@@ -17,9 +17,12 @@ const HomePage = styled.div`
     }
 `;
 
+export const TranscendanceLogo =styled.img`
+    width:50%;
+`;
 export const HomePageImage = styled.img`
     border:2px solid #E6E6E6;
-    width:94%;
+    width:100%;
     &:hover{
         z-index:5;
         filter:blur(0px);
