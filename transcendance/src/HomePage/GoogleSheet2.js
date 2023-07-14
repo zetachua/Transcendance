@@ -36,14 +36,14 @@ const HomeGallery = () => {
             <Border></Border>
             <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[0].c[0].v} alt="drive image"></HomePageImage>
           </Container>
-          <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h5 style={{color:"#B3B3B3"}}>CREATIONS</h5></a>
+          <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h4 style={{color:"#6B6A6B", }}>CREATIONS</h4></a>
           <Container>
             <Border></Border>
             <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[1].c[0].v} alt="drive image"></HomePageImage>
           </Container>
-          <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h5 style={{color:"#B3B3B3"}}>GALLERY</h5></a>
-          <HomePageImage style={{width:'92%', margin:'auto'}}src={"https://drive.google.com/uc?export=view&id="+rows[4].c[0].v} alt="drive image"></HomePageImage>
-          <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h5 style={{color:"#B3B3B3"}}>BIOGRAPHY</h5></a>
+          <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h4 style={{color:"#6B6A6B"}}>GALLERY</h4></a>
+          <HomePageImage style={{width:'90%', margin:'auto'}}src={"https://drive.google.com/uc?export=view&id="+rows[4].c[0].v} alt="drive image"></HomePageImage>
+          <a href="#" style={{margin:'auto',textDecoration:'none',color:'black'}}><h4 style={{color:"#6B6A6B"}}>BIOGRAPHY</h4></a>
           <Container>
             <Border></Border>
             <HomePageImage src={"https://drive.google.com/uc?export=view&id="+rows[3].c[0].v} alt="drive image"></HomePageImage>
